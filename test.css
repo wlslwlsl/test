@@ -44,8 +44,7 @@ a:hover.tooltips span {
 }
 span.top{
 	position:relative;
-	top:-5px;
-	z-index:1;
+	top:5px;
 }
 span.right{
 	position:relative;
@@ -53,5 +52,5 @@ span.right{
 }
 span.bottom{
 	position:relative;
-	bottom:15px;
+	bottom:5px;
 }
