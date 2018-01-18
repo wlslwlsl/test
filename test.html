@@ -1,30 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">		
-		<link rel="./test.css" type="text/css" rel="stylesheet" />
+ <head>
+   <meta charset="utf-8">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  	<link rel="stylesheet" href="/resources/demos/style.css">
+	<link rel="./test.css" type="text/css" rel="stylesheet" />
+	<style type="text/css">
+	#tdtop{
+		font-size:3em;
+		color:#585858;
+	}
+	#top{
+		margin-left:20px;
+	}
+a.tooltips {
+	position: relative;
+	display: inline;
+	text-decoration:none;
+}
+a.tooltips span {
+	position: absolute;
+	width: 140px;
+	color: #FFFFFF;
+	background: #000000;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	display: none;
+	border-radius: 6px;
+}
+a.tooltips span:after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -8px;
+	width: 0;
+	height: 0;
+	border-top: 8px solid #000000;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+}
+a:hover.tooltips span {
+	display: block;
+	opacity: 0.8;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -76px;
+	z-index: 999;
+}
+span.top{
+	position:relative;
+	top:-5px;
+	z-index:1;
+}
+span.right{
+	position:relative;
+	right:5px;
+}
+span.bottom{
+	position:relative;
+	bottom:15px;
+}
+	</style>
 
 	<script language="javascript">
 	function word(){
 		var spanvalue = document.getElementById("click");		
-		spanvalue.innerHTML = "<span class='right' id='hang' title='관련도 : 싹싹하다, 상냥하다 : 관련도 90%' style='CURSOR:hand;'>상냥하다</span> <span class='top' id='happy' title='관련도 : 싹싹하다, 나긋나긋하다 : 관련도 90%' style='CURSOR:hand;'>나긋나긋하다</span>";
-		
+		spanvalue.innerHTML = "<span class='right' id='hang' title='관련도 : 싹싹하다, 상냥하다 : 관련도 90% &#10; * 다른연관단어 * &#10; 착하다,온화하다, 정답다, 부드럽다, 친절하다' style='CURSOR:hand;'>상냥하다</span> <span class='top' id='happy' title='관련도 : 싹싹하다, 나긋나긋하다 : 관련도 90% &#10; * 다른연관단어 * &#10; 연하다, 보드랍다, 친절하다, 부드럽다' style='CURSOR:hand;'>나긋나긋하다</span>";	
 	}
 	</script>
-
-	</head>
-	<body>
-		<form name="form" method="post">
- 		<div>
-		<table id="top" border="0" width="1000" height="100" cellpadding="0" cellspacing="0">
+ </head>
+ <body>
+	<form name="form" method="post">
+ 	<div>
+	<table id="top" border="0" width="1000" height="100" cellpadding="0" cellspacing="0">
   		<tr>
-		<td id="tdtop" style="border-color:white"> Test </td>
-		</tr>
-		</table>
-		<hr border-color="gray";>
-		선술집 앞을 지나갈 때, 친구 치삼이가 한잔 걸치고 나오는 게 아닌가. 붙이는 말씨도 연하고 <a class="tooltips" id="click" href="javascript:void(0)" title="연관 단어 보기" onclick="word()">싹싹했다.</a> 창자가 주린 탓에 미꾸리 국과 데운 막걸리를 거푸거푸 마셔댔다.
-		</div>
-		</form>
-	</body>
+   		 <td id="tdtop" style="border-color:white"> Test </td>
+  		</tr>
+	</table>
+	<hr border-color="gray";>
+	선술집 앞을 지나갈 때, 친구 치삼이가 한잔 걸치고 나오는 게 아닌가. 붙이는 말씨도 연하고 <a class="tooltips" id="click" href="#" title="연관 단어 보기" onclick="word()">싹싹했다.</a> 창자가 주린 탓에 미꾸리 국과 데운 막걸리를 거푸거푸 마셔댔다.
+	</div>
+	</form>
+ </body>
 </html>
