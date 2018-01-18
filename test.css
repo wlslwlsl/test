@@ -1,10 +1,46 @@
-#tdtop {
+body {
+	margin-left: 15%;
+	margin-right: 15%;
+	border-color: white;
+	border-style: solid;
+	border-width: 10px;
+}
+
+div#body {
+	background-color: white;
+	overflow: hidden;
+}
+
+div#header {
+	overflow: hidden;
+	background-color: #132851;
+	color: white;
+}
+
+div#textblock {
+    background-color: #a0dadb;
+    border-color: #1D2475;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 15px;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+div#textblock h3 {
+    font-style:oblique;
+    border-color: blue;
+	border-bottom: dashed;
+	border-width: 2px;
+    padding-bottom: 5px;
+}
+
+h1 {
+    text-align: center;
 	font-size:3em;
-	color:#585858;
+	color:#7f9ad1;
 }
-#top {
-	margin-left:20px;
-}
+
 a.tooltips {
 	position: relative;
 	display: inline;
