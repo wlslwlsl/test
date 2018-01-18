@@ -8,10 +8,7 @@
 	<link rel="./test.css" type="text/css" rel="stylesheet" />
 	
 	<script language="javascript">
-	function word(){
-		var spanvalue = document.getElementById("click");		
-		spanvalue.innerHTML = "<span class='right' id='hang' title='관련도 : 싹싹하다, 상냥하다 : 관련도 90% &#10; * 다른연관단어 * &#10; 착하다,온화하다, 정답다, 부드럽다, 친절하다' style='CURSOR:hand;'>상냥하다</span> <span class='top' id='happy' title='관련도 : 싹싹하다, 나긋나긋하다 : 관련도 90% &#10; * 다른연관단어 * &#10; 연하다, 보드랍다, 친절하다, 부드럽다' style='CURSOR:hand;'>나긋나긋하다</span>";	
-	}
+
 	</script>
  </head>
  <body>
@@ -23,7 +20,7 @@
   		</tr>
 	</table>
 	<hr border-color="gray";>
-	선술집 앞을 지나갈 때, 친구 치삼이가 한잔 걸치고 나오는 게 아닌가. 붙이는 말씨도 연하고 <a class="tooltips" id="click" href="#" title="연관 단어 보기" onclick="word()">싹싹했다.</a> 창자가 주린 탓에 미꾸리 국과 데운 막걸리를 거푸거푸 마셔댔다.
+	선술집 앞을 지나갈 때, 친구 치삼이가 한잔 걸치고 나오는 게 아닌가. 붙이는 말씨도 연하고 <a class="tooltips" id="click" href="javascript:void(0)" title="연관 단어 보기" >싹싹했다. <span class="right" id="hang" title="관련도 : 싹싹하다, 상냥하다 : 관련도 90% &#10; * 다른연관단어 * &#10; 착하다,온화하다, 정답다, 부드럽다, 친절하다" style="CURSOR:hand;">상냥하다</span> <span class="top" id="happy" title="관련도 : 싹싹하다, 나긋나긋하다 : 관련도 90% &#10; * 다른연관단어 * &#10; 연하다, 보드랍다, 친절하다, 부드럽다" style="CURSOR:hand;">나긋나긋하다</span></a> 창자가 주린 탓에 미꾸리 국과 데운 막걸리를 거푸거푸 마셔댔다.
 	</div>
 	</form>
  </body>
