@@ -41,51 +41,27 @@ h1 {
 	color:#7f9ad1;
 }
 
-a.tooltips {
-	position: relative;
-	display: inline;
-	text-decoration:none;
+.popupWord {
+	cursor: pointer;
+    color: blue;
+    text-decoration: underline;
 }
-a.tooltips span {
+
+.popupLayer {
 	position: absolute;
-	width: 140px;
-	color: #FFFFFF;
-	background: #000000;
-	height: 30px;
-	line-height: 30px;
-	text-align: center;
 	display: none;
-	border-radius: 6px;
+	background-color: #ffffff;
+	border: solid 2px #d0d0d0;
+	width: 350px;
+	height: 150px;
+	padding: 10px;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 0 7px green;
 }
-a.tooltips span:after {
-	content: '';
+
+.popupLayer div { /* 팝업 레이어에 있는 닫기(X) 버튼 */
 	position: absolute;
-	top: 100%;
-	left: 50%;
-	margin-left: -8px;
-	width: 0;
-	height: 0;
-	border-top: 8px solid #000000;
-	border-right: 8px solid transparent;
-	border-left: 8px solid transparent;
-}
-a:focus.tooltips span {
-	display: block;
-	opacity: 0.8;
-	bottom: 30px;
-	left: 50%;
-	margin-left: -76px;
-	z-index: 999;
-}
-span.top{
-	position:relative;
-	top:5px;
-}
-span.right{
-	position:relative;
-	right:5px;
-}
-span.bottom{
-	position:relative;
-	bottom:5px;
+	top: 5px;
+	right: 5px
 }
