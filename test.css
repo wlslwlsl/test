@@ -50,18 +50,25 @@ h1 {
 .popupLayer {
 	position: absolute;
 	display: none;
-	background-color: #ffffff;
-	border: solid 2px #d0d0d0;
-	width: 350px;
-	height: 150px;
+	background-color: white;
+	width: 100px;
+	height: 100px;
 	padding: 10px;
     color: black;
-    border-radius: 20px;
-    box-shadow: 0 0 7px green;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 100px;
+    border: 7px solid green;
+    border-bottom-color: white;
+}
+
+.popupLayer:after {
+    
 }
 
 .popupLayer div { /* 팝업 레이어에 있는 닫기(X) 버튼 */
 	position: absolute;
-	top: 5px;
-	right: 5px
+    left: 50px;
+    top: 25px;
+    line-height: 0px;
 }
